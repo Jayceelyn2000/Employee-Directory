@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Directory</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="myscripts.js"></script>
+</head>
+<body>
+<!-- Grid -->
+<div class="grid-container"> 
+
+  <!-- Navbar -->
+   <div class="item1">
+      <a href="#home" class="directory-bar-item directory-button"><b>Unite</b> Enterprices</a>
+
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="directory-right directory-hide-small">
+        <a href="#home" class="directory-bar-item directory-button">Home</a>
+        <a href="#about" class="directory-bar-item directory-button">About</a>
+        <a href="#services" class="directory-bar-item directory-button">Services</a>
+      </div>
+
+      <!-- Header -->
+      <header class="directory-display-container directory-content directory-wide" style="max-width:2000px;" id="home">
+        <img class="directory-image" src="Photos/Screenshot (17).png" alt="employeedirectoryphoto" width="2000" height="800">
+        <div class="directory-display-middle directory-margin-top directory-center">
+          <h1 class="directory-xxlarge directory-text-white"><span class="directory-hide-small directory-text-light-grey"><b>Employee</b></span> <span class="directory-padding directory-black directory-opacity-min">Directory</span></h1>
+        </div>
+      </header>
+   </div>
+    <br>
+
+    <!-- Filter -->
+    <div class="item2">
+      <!-- Control buttons -->
+       <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button><br>
+          <button class="btn" onclick="filterSelection('media')"> Media</button>
+          <button class="btn" onclick="filterSelection('technology')"> Technology</button>
+          <button class="btn" onclick="filterSelection('operations')"> Operations</button>
+          <button class="btn" onclick="filterSelection('customer-service')"> Customer Service</button>
+       </div>
+        <br>
+        <br>
+
+      <!-- Search Bar -->
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+            <ul id="myUL">
+              <li><a href="#Aaron">Aaron</a></li>
+              <li><a href="#Anthony">Anthony</a></li>
+              <li><a href="#Ashton">Ashton</a></li>
+              <li><a href="#Brice">Brice</a></li>
+              <li><a href="#Carson">Carson</a></li>
+              <li><a href="#Collin">Collin</a></li>
+              <li><a href="#Jaycee">Jaycee</a></li>
+              <li><a href="#Karen">Karen</a></li>
+              <li><a href="#Lydia">Lydia</a></li>
+              <li><a href="#Martin">Martin</a></li>
+              <li><a href="#Nicole">Nicole</a></li>
+              <li><a href="#Tracy">Tracy</a></li>
+            </ul>
+     </div>
+
+  <!-- Employees -->
+   
+  <div class="item3">
+    <div class="container">
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv customer-service">
+        <img src="Photos/Tracy.jpg" alt="Tracy Customer-Service" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Tracy"><h3>Tracy Bailey</h3></a>
+          <p class="directory-opacity">Account Manager</p>
+          <p>Customer Service</p>
+          <p>Extention: 101</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv media">
+        <img src="Photos/Brice.jpg" alt="Brice" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Brice Media"><h3>Brice Sherer</h3></a>
+          <p class="directory-opacity">Content Manager</p>
+          <p>Media Department</p>
+          <p>Extention: 200</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv operations">
+        <img src="Photos/Collin.jpg" alt="Collin Operations" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Collin"><h3>Collin Cotter</h3></a>
+          <p class="directory-opacity">Project Manager</p>
+          <p>Operations Department</p>
+          <p>Extention: 301</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv operations">
+        <img src="Photos/Carson.jpg" alt="Carson Operations" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Carson"><h3>Carson Rast</h3></a>
+          <p class="directory-opacity">Director of Finance</p>
+          <p>Operations Department</p>
+          <p>Extention: 302</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv technology">
+        <img src="Photos/Aaron.jpg" alt="Aaron Technology" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Aaron"><h3>Aaron Moran</h3></a>
+          <p class="directory-opacity">Director of Analytics</p>
+          <p>Technology Department</p>
+          <p>Extention: 400</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv technology">
+        <img src="Photos/Anthony.jpg" alt="Anthony Technology" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Anthony"><h3>Anthony Alicea</h3></a>
+          <p class="directory-opacity">Web Architect</p>
+          <p>Technology Department</p>
+          <p>Extention: 401</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv customer-service">
+        <img src="Photos/Martin.jpg" alt="Martin Customer-Service" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Martin"><h3>Martin Pospisil</h3></a>
+          <p class="directory-opacity">Account Coordinator</p>
+          <p>Customer Service</p>
+          <p>Extention: 102</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv media">
+        <img src="Photos/Ashton.jpg" alt="Ashton Media" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Ashton"><h3>Ashton Norris</h3></a>
+          <p class="directory-opacity">Media Coordinator</p>
+          <p>Media Department</p>
+          <p>Extention: 201</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv operations">
+        <img src="Photos/Nicole.jpg" alt="Nicole Operations" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Nicole"><h3>Nicole Mayfield</h3></a>
+          <p class="directory-opacity">Accountant</p>
+          <p>Operations Department</p>
+          <p>Extention: 300</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv technology">
+        <img src="Photos/Karen.jpg" alt="Karen Technology" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Karen"><h3>Karen Espino</h3></a>
+          <p class="directory-opacity">Marketing Analyst</p>
+          <p>Technology Department</p>
+          <p>Extention: 402</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv media">
+        <img src="Photos/Lydia.jpg" alt="Lydia Media" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Lydia"><h3>Lydia Spraggins</h3></a>
+          <p class="directory-opacity">Media Analyst</p>
+          <p>Media Department</p>
+          <p>Extention: 202</p>
+        </div>
+      </div>
+      <div class="directory-col l3 m6 directory-margin-bottom filterDiv customer-service">
+        <img src="Photos/Jaycee.jpg" alt="Jaycee Customer-Service" style="width:198px; height:198px">
+        <div class="ed-container">
+          <a id="Jaycee"><h3>Jaycee Eckerdt</h3></a>
+          <p class="directory-opacity">Receptionist</p>
+          <p>Customer Service</p>
+          <p>Extention: 100</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+    <div class="item4">
+      <div class="big-container">
+        <div class="directory-container directory-padding-32" id="contact">
+          <h2 class="directory-border-bottom directory-border-light-grey directory-padding-16">Contact Our Team:</h2>
+          <br>
+            <h4>Recipient:</h4>
+              <select id="Recipient" name="Recipient">
+                <option value="#Aaron">Aaron</option>
+                <option value="#Anthony">Anthony</option>
+                <option value="#Ashton">Ashton</option>
+                <option value="#Brice">Brice</option>
+                <option value="#Carson">Carson</option>
+                <option value="#Collin">Collin</option>
+                <option value="#Jaycee">Jaycee</option>
+                <option value="#Karen">Karen</option>
+                <option value="#Lydia">Lydia</option>
+                <option value="#Martin">Martin</option>
+                <option value="#Nicole">Nicole</option>
+                <option value="#Tracy">Tracy</option>
+              </select>
+          <br>
+          <br>
+          <input class="directory-input directory-border" type="text" placeholder="Name" required name="Name">
+          <input class="directory-input directory-section directory-border" type="text" placeholder="Email" required name="Email">
+          <input class="directory-input directory-section directory-border" type="text" placeholder="Subject" required name="Subject">
+          <input class="directory-input directory-section directory-border" type="text" placeholder="Comment" required name="Comment">
+          <button class="directory-button directory-black directory-section" type="submit">Send Message</button>
+        </div>
+        <br><br>
+        <img src="Photos/phone.png" style="width:30px; height:30px"><h4>(903)360-7086</h4>
+        <img src="Photos/mail.png" style="width:30px; height:30px"><h4>info@unite.org</h4>
+        <img src="Photos/profile.png" style="width:30px; height:30px"><h4>Instagram: @Unite<br>Facebook: Unite Enterprices</h4>
+        <img src="Photos/location.png" style="width:30px; height:30px"><h4>45 Primrose Court<br>Santa Monica, CA 90403</h4>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <div class="item5">
+    <footer class="directory-center">
+      <a><p>Powered by <b>Unite</b> Enterprices</p></a>
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>
